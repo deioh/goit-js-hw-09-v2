@@ -17,8 +17,6 @@ buttonDisabled(true);
 
 // });
 
-Notify.warning('Memento te hominem esse');
-
 // Set up options for the flatpickr date picker
 const options = {
   enableTime: true,
@@ -48,7 +46,7 @@ const options = {
       console.log('Input date is not in the future');
       // Display an alert to the user
 
-      alert('Please choose a date in the future');
+      Notify.warning('Please choose a date in the future');
       // Prevent the button from being enabled
       return;
     }
