@@ -94,7 +94,7 @@ buttonStart.addEventListener('click', () => {
     spanElementValue[2].textContent = timeParts.minutes;
     spanElementValue[3].textContent = timeParts.seconds;
     // Check condition to end the interval
-    if (ticker <= 0) {
+    if (ticker < 1000) {
       console.log('ticker is <= 0, ending the interval');
       clearInterval(intervalId); // End the interval
       intervalId = null;
