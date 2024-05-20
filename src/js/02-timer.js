@@ -3,6 +3,8 @@ import flatpickr from 'flatpickr';
 // Additional styles import
 import 'flatpickr/dist/flatpickr.min.css';
 
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 const inputDate = document.getElementById('datetime-picker');
 const buttonStart = document.querySelector('button[data-start]');
 const spanElementValue = document.getElementsByClassName('value');
@@ -11,10 +13,11 @@ buttonDisabled(true);
 // Notiflix.Confirm.init({
 //   width: '320px',
 //   messageMaxLength: 1923,
-//   plainText: true,
+//   plainText: true,npm i notiflix
+
 // });
 
-//Notiflix.Notify.warning('Memento te hominem esse');
+Notify.warning('Memento te hominem esse');
 
 // Set up options for the flatpickr date picker
 const options = {
