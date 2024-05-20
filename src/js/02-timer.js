@@ -85,7 +85,7 @@ buttonStart.addEventListener('click', () => {
   intervalId = setInterval(() => {
     ticker -= 1000;
     const timeParts = convertMs(ticker);
-    console.log(ticker);
+    console.log(ticker / 1000);
     console.log('tickerId:', convertMs(ticker));
 
     // Update the span elements with the time parts
@@ -94,7 +94,7 @@ buttonStart.addEventListener('click', () => {
     spanElementValue[2].textContent = timeParts.minutes;
     spanElementValue[3].textContent = timeParts.seconds;
     // Check condition to end the interval
-    if (ticker < 1000) {
+    if (ticker / 1000 <= 0) {
       console.log('ticker is <= 0, ending the interval');
       clearInterval(intervalId); // End the interval
       intervalId = null;
