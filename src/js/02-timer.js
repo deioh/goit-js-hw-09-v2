@@ -77,7 +77,7 @@ buttonStart.addEventListener('click', () => {
   }
   // Convert the input value to a Date object
 
-  const spanElement = document.querySelector('span[data-days]');
+  //const spanElement = document.querySelector('span[data-days]');
   const futureDateMs = new Date(inputDate.value).getTime();
   const currentDateMs = Date.now();
   let ticker = futureDateMs - currentDateMs;
