@@ -24,8 +24,9 @@ function promiseGenerator(e) {
       .catch(({ position, delay }) => {
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       });
+
+    delayValue += Number(step.value);
   }
-  delayValue += Number(step.value);
 }
 
 function createPromise(position, delay) {
@@ -39,11 +40,5 @@ function createPromise(position, delay) {
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       }
     }, delay);
-
-    //   if (shouldResolve) {
-    //     // Fulfill
-    //   } else {
-    //     // Reject
-    //   }
   });
 }
