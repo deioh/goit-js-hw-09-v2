@@ -1,12 +1,10 @@
-import Notiflix from 'notiflix';
-//import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const refs = {
   form: document.querySelector('.form'),
   delay: document.querySelector('input[name="delay"]'),
   step: document.querySelector('input[name="step"]'),
   amount: document.querySelector('input[name="amount"]'),
-  //  buttonStart: document.querySelector('button[data-start]'),
 };
 
 const { form, delay, step, amount } = refs;
